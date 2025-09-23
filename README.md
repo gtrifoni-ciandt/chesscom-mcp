@@ -1,4 +1,4 @@
-# How to Use MCP
+# How to Use
 
 Install this MCP server by adding the following JSON code to your MCP config file
 
