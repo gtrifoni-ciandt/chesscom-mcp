@@ -16,3 +16,15 @@ def get_player_stats(username):
     response = requests.get(url, headers=headers)
     response.raise_for_status()
     return response.json()
+
+def get_player_is_online(username):
+    url = f"{CHESS_API_BASE}/player/{username}/is-online"
+    response = requests.get(url, headers=headers)
+    response.raise_for_status()
+    return response.json()
+
+def get_player_current_games(username):
+    url = f"{CHESS_API_BASE}/player/{username}/games"
+    response = requests.get(url, headers=headers)
+    response.raise_for_status()
+    return response.json()
